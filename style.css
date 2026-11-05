@@ -150,7 +150,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .grid-course-container {
+    .grid-container {
         grid-template-columns: 1fr;
     }
 }
