@@ -9,14 +9,14 @@ buton.addEventListener("click", () => {
 });
 
 let form = document.getElementById("contact-form");
+let feedback = document.getElementById("form-feedback");
 
-if (form) {
+if (form !== null) {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
         let message = document.getElementById("message").value;
-        let feedback = document.getElementById("form-feedback");
-
+        
         if (message.trim().length < 10) {
             feedback.textContent = "Error: Message is too short! Must be atleast 10 char";
             feedback.style.color = "red";
